@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Sign Up</title>
+    </head>
+    <body>
+        <form id="register-form"> 
+            <p>Sign Up:</p>
+                <label for = "fullname">Enter Fullname:</label>
+                <input id="fullname" type="text" placeholder="Fullname" value=""/>
+                    <br></br>
+                <label for = "password">Enter Password:</label>
+                <input id="password" type="password" placeholder="Password" value=""/>
+                    <br></br>
+                <label for="email">Enter email:</label>
+                <input id="email" type="email" placeholder="example@mail.com">
+                    <br></br>
+                <label for="Birthday">Enter Birthday: </label>
+                <input type="date" id="birthday">
+                    <br></br>
+                
+            <p>Select your gender:</p>
+                <input type="radio" name="gender" value="female" id="genderFemale">
+                <label for="female">Female</label>
+                <input type="radio" name="gender" value="male" id="genderMale">
+                <label for="male">Male</label>
+                    <br></br>
+    
+             <p>Select your interest:</p>
+                <input type="radio" value="female" id="interestFemale">
+                <label for="Female">Female</label>
+                <input type="radio" value="male" id="interestMale">
+                <label for="Male">Male</label>
+                <input type="radio" value="both" id="interestBoth">
+                <label for="both">Both</label>
+                    <br></br>
+            
+
+            <input id="signUpButton" type="submit" value="Sign Up" onClick="store()"/> 
+            <br></br>
+        </form>
+    <script type="text/javascript" language="javascript" src="/storage/localStorage.js"></script>
+
+    </body>
+</html>

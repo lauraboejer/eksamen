@@ -1,5 +1,3 @@
-class User {
-    constructor(userID, firstname, lastname, email) {
-    this.userID
-    }
-}
+
+
+module.exports = User;

@@ -38,7 +38,7 @@ var interest = null;
     localStorage.setItem("gender", gender);
     localStorage.setItem("interest", interest)
 }
-// check if stored data from register-form is equal to entered data in the   login-form
+// check if stored data from register-form is equal to entered data in the login-form
 function checkData() {
     // stored data from the register-form
     var storedEmail = localStorage.getItem('email');
@@ -54,3 +54,4 @@ function checkData() {
     }else {
         alert('ERROR!');
     }
+};

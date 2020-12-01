@@ -11,23 +11,17 @@ fs.readFile('./storage.json', 'utf8', (err, storage) => {
 });
 
 var User = require('../model/user');
-var fullname = document.getElementById('fullname');
-var password = document.getElementById('password');
-var email = document.getElementById("email");
-var birthday = document.getElementById('birthday');
+// var fullname = document.getElementById('fullname');
+// var password = document.getElementById('password');
+// var email = document.getElementById("email");
+// var birthday = document.getElementById('birthday');
 
-var genderFemale = document.getElementById('genderFemale');
-var genderMale = document.getElementById('genderMale');
+// var genderFemale = document.getElementById('genderFemale');
+// var genderMale = document.getElementById('genderMale');
 
-var interestFemale = document.getElementById('interestFemale');
-var interestMale = document.getElementById('interestMale');
-var interestBoth = document.getElementById('interestBoth');
-
-// const showAllUsers = (req, res) => {
-//     console.log("Users in the database: " + users);
-
-//     res.send(users);
-// };
+// var interestFemale = document.getElementById('interestFemale');
+// var interestMale = document.getElementById('interestMale');
+// var interestBoth = document.getElementById('interestBoth');
 
 const createUser = (req, res) => {   
     var gender = null;
@@ -66,7 +60,13 @@ const createUser = (req, res) => {
         }
     });
 }
-    
+   
+// const showAllUsers = (req, res) => {
+//     console.log("Users in the database: " + users);
+
+//     res.send(users);
+// };
+
 // const showUser = (req, res) => {
 //     res.send(req.params.id)
 // };
@@ -87,8 +87,8 @@ const createUser = (req, res) => {
 //     console.log(`username has been updated to ${req.body.username}.age has been updated to ${req.body.age}`)
 // };
 
-exports.showAllUsers = showAllUsers;
+//exports.showAllUsers = showAllUsers;
 exports.createUser = createUser;
-exports.showUser = showUser;
-exports.deleteUser = deleteUser;
-exports.updateUser = updateUser;
+// exports.showUser = showUser;
+// exports.deleteUser = deleteUser;
+// exports.updateUser = updateUser;

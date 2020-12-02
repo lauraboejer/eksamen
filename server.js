@@ -8,7 +8,7 @@ const fs = require('fs');
 
 //server.post('/signup', controllers.createUser);
 
-server.get('/frontpage', function(req, res) { //henviser brugeren til front page-siden på endpoint /frontpage
+server.get('/', function(req, res) { //henviser brugeren til front page-siden på endpoint /frontpage
   fs.readFile(__dirname + '/client/view/frontpage.html', 'utf8', function(err, text){
     res.send(text)
     console.log("Front page endpoint reached");

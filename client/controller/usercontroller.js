@@ -1,5 +1,5 @@
 var fs = require('fs');
-fs.readFile('./storage.json', 'utf8', (err, storage) => {
+fs.readFile('storage.json', 'utf8', (err, storage) => {
     if (err) {
         console.log("Error reading file from disk:", err)
         return;

@@ -4,40 +4,39 @@
         <title>Sign Up</title>
     </head>
     <body>
-        <form id="signUpForm"> 
+        <form action="/signup" method="POST" id="signUpForm"> 
             <b>Sign Up:</b>
                 <br><br>
                 <label for="fullname">Enter Fullname:</label>
-                <input id="fullname" type="text" placeholder="Fullname"/>
+                <input id="fullname" type="text" placeholder="Fullname" name="fullname"/>
                     <br></br>
                 <label for="signUpPassword">Enter Password:</label>
-                <input id="signUpPassword" type="password" placeholder="Password"/>
+                <input id="signUpPassword" type="password" placeholder="Password" name="password"/>
                     <br></br>
                 <label for="signUpEmail">Enter email:</label>
-                <input id="signUpEmail" type="email" placeholder="example@mail.com">
+                <input id="signUpEmail" type="email" placeholder="example@mail.com" name="email">
                     <br></br>
                 <label for="birthday">Enter Birthday: </label>
-                <input id="birthday" type="date" id="birthday">
+                <input id="birthday" type="date" id="birthday" name="birthday">
                     <br></br>
                 
             <p>Select your gender:</p>
-                <input type="radio" name="gender" value="female" id="genderFemale">
+                <input type="radio" value="female" id="genderF" name="genderF" >
                 <label for="female">Female</label>
-                <input type="radio" name="gender" value="male" id="genderMale">
+                <input type="radio" value="male" id="genderM" name="genderM">
                 <label for="male">Male</label>
                     <br></br>
     
              <p>Select your interest:</p>
-                <input type="radio" value="female" id="interestFemale">
+                <input type="radio" value="female" id="interestF" name="interestF">
                 <label for="female">Female</label>
-                <input type="radio" value="male" id="interestMale">
+                <input type="radio" value="male" id="interestM" name="interestM">
                 <label for="fale">Male</label>
-                <input type="radio" value="both" id="interestBoth">
+                <input type="radio" value="both" id="interestB" name="interestB">
                 <label for="both">Both</label>
                     <br></br>
             
-            <input id="signUpButton" type="submit" value="Sign Up"/> 
+            <input id="signUpButton" type="submit" value="Sign Up" @click="createUser()"/> 
         </form>
-        <script type="text/javascript" language="javascript" src="../controller/usercontroller.js"></script>
     </body>
 </html>

@@ -1,0 +1,16 @@
+[
+  {
+    "fullname": "Jacob",
+    "password": "1234",
+    "email": "jacobrindsig@hotmail.com",
+    "birthday": "1997-03-14",
+    "userID": 1606944916597
+  },
+  {
+    "fullname": "Laura",
+    "password": "1234",
+    "email": "lauraboejer@live.dk",
+    "birthday": "1999-05-23",
+    "userID": 1606945844025
+  }
+]

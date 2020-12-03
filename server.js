@@ -21,25 +21,25 @@ server.post('/signup', function createUser(req, res) {
     req.body.email,
     req.body.birthday,
     Date.now(),
-    req.body.gender,
-    req.body.gender,    
+    user.selectedGender(),
+    user.selectedInterest()
     );
     
     users.push(user);
-  
+      
     var storage = JSON.stringify(users, null, 2);
-    fs.writeFileSync('storage/storage.json', storage, "utf8", (err) => {
+    fs.writeFileSync('storage/storage.json', storage, "utf8"), (err) => {
         if (err) {
             console.error(err);
             alert("Account creating failed!")
+            preventDefault;
             return; 
         } else {
             console.log("File has been created");
             alert("Account creating succesful!")
         };
-    });
-    
-});
+    }
+}); 
 
 server.get('/', function(req, res) { //henviser brugeren til front page-siden på endpoint /frontpage
   fs.readFile(__dirname + '/client/view/frontpage.html', 'utf8', function(err, text){

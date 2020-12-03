@@ -12,5 +12,19 @@
     "email": "lauraboejer@live.dk",
     "birthday": "1999-05-23",
     "userID": 1606945844025
+  },
+  {
+    "fullname": "test",
+    "password": "test",
+    "email": "1234@live.dk",
+    "birthday": "1212-12-12",
+    "userID": 1607009404933
+  },
+  {
+    "fullname": "test",
+    "password": "test",
+    "email": "1234@live.dk",
+    "birthday": "1212-12-12",
+    "userID": 1607009524940
   }
 ]

@@ -1,35 +1,35 @@
 // opstiller variable for hver sign up form og giver dem et kalde navn 
-var fullname = document.getElementById('fullname');
-var password = document.getElementById('password');
-var email = document.getElementById("email");
-var birthday = document.getElementById("birthday");
+var fullname = req.body.fullname;
+var password = req.body.password;
+var email = req.body.email;
+var birthday = req.body.birthday;
 
-var genderFemale = document.getElementById("genderFemale");
-var genderMale = document.getElementById("genderMale");
+var genderF = document.getElementById("genderFemale");
+var genderM = document.getElementById("genderMale");
 
-var interestFemale = document.getElementById("interestFemale");
-var interestMale = document.getElementById("interestMale");
-var interestBoth = document.getElementById("interestBoth");
+var interestF = document.getElementById("interestFemale");
+var interestM = document.getElementById("interestMale");
+var interestB = document.getElementById("interestBoth");
 
 // kalder localstorage og bruger set funktionen til at sætte keyword til den value
 function storeData() {
 var gender = null;
-    if (genderMale.checked) {
-        gender = genderMale.value;
+    if (genderM.checked) {
+        gender = genderM.value;
     }
-    if (genderFemale.checked) {
-        gender = genderFemale.value;
+    if (genderF.checked) {
+        gender = genderF.value;
     }
 
 var interest = null;
-    if (interestMale.checked) {
-        interest = interestMale.value;
+    if (interestM.checked) {
+        interest = interestM.value;
     }
-    if (interestFemale.checked) {
-        interest = interestFemale.value;
+    if (interestF.checked) {
+        interest = interestF.value;
     }
-    if (interestBoth.checked) {
-        interest = interestBoth.value;
+    if (interestB.checked) {
+        interest = interestB.value;
     }
     localStorage.setItem('fullname', fullname.value);
     localStorage.setItem('password', password.value);

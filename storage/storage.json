@@ -16,15 +16,29 @@
   {
     "fullname": "test",
     "password": "test",
-    "email": "1234@live.dk",
-    "birthday": "1212-12-12",
-    "userID": 1607009404933
+    "email": "test@test.test",
+    "birthday": "2020-12-10",
+    "userID": 1607111057018
   },
   {
-    "fullname": "test",
-    "password": "test",
-    "email": "1234@live.dk",
-    "birthday": "1212-12-12",
-    "userID": 1607009524940
+    "fullname": "Laura",
+    "password": "1234",
+    "email": "lauraboejer@live.dk",
+    "birthday": "2020-12-25",
+    "userID": 1607111142153
+  },
+  {
+    "fullname": "ee",
+    "password": "123e4",
+    "email": "1234@1234.dk",
+    "birthday": "2020-12-09",
+    "userID": 1607111780959
+  },
+  {
+    "fullname": "Laura",
+    "password": "1234",
+    "email": "lauraboejer@live.dk",
+    "birthday": "2020-12-02",
+    "userID": 1607114537993
   }
 ]

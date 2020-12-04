@@ -37,7 +37,7 @@ class User {
             this.gender = gender;
             return gender;
         };
-};
+}};
 
 module.exports = User;
 

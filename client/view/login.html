@@ -4,17 +4,16 @@
         <title>Login </title>
     </head>
     <body>
-        <form id="loginForm"> 
+        <form action="/login" method="POST" id="loginForm"> 
             <b>Login:</b>
             <br><br>
             <label for="loginEmail">E-mail:</label>
-            <input id="loginEmail" type="text" placeholder="Enter Email" />
+            <input id="loginEmail" type="text" placeholder="Enter Email" name="logInEmail"/>
                 <br></br>
             <label for="loginPassword">Password:</label>
-            <input id="loginPassword" type="password" placeholder="Enter Password"/>
+            <input id="loginPassword" type="password" placeholder="Enter Password" name="logInPassword"/>
                 <br></br>
-            <input id="loginButton" type="submit" value="Login" onClick="checkData()"/> 
+            <input id="loginButton" type="submit" value="Login" @click="logIn()"/> 
        </form>
-       <script type="text/javascript" language="javascript" src="/storage/localStorage.js"></script>
     </body>
 </html>

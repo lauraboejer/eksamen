@@ -21,22 +21,23 @@
                     <br></br>
                 
             <p>Select your gender:</p>
-                <input type="radio" value="female" id="genderF" name="genderF" >
+                <input type="radio" value="female" id="genderF" name="gender" >
                 <label for="female">Female</label>
-                <input type="radio" value="male" id="genderM" name="genderM">
+                <input type="radio" value="male" id="genderM" name="gender">
                 <label for="male">Male</label>
                     <br></br>
     
              <p>Select your interest:</p>
-                <input type="radio" value="female" id="interestF" name="interestF">
+                <input type="radio" value="female" id="interestF" name="interest">
                 <label for="female">Female</label>
-                <input type="radio" value="male" id="interestM" name="interestM">
+                <input type="radio" value="male" id="interestM" name="interest">
                 <label for="fale">Male</label>
-                <input type="radio" value="both" id="interestB" name="interestB">
+                <input type="radio" value="both" id="interestB" name="interest">
                 <label for="both">Both</label>
                     <br></br>
             
-            <input id="signUpButton" type="submit" value="Sign Up" @click="signUp()"/> 
+            <input id="signUpButton" type="submit" value="Sign Up" @click="validateLogIn()"/> 
         </form>
+        <script src="/localStorage.js"></script>
     </body>
 </html>

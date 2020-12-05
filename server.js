@@ -39,9 +39,27 @@ server.post('/signup', function signUp(req, res) {
     req.body.email,
     req.body.birthday,
     Date.now(),
-    //user.selectedGender(),
-    //user.selectedInterest()
-    );
+    req.body.gender,
+    req.body.interest,
+    function selectedGender() {
+        if (req.body.gender == "male") {
+            return req.body.gender;
+        }
+        if (req.body.gender == "female") {
+            return req.body.gender;
+        }
+    },
+        function selectedInteret() {
+        if (req.body.interest == "male") {
+            return req.body.interest;
+        } 
+        if (req.body.interest == "female") {
+            return req.body.interest;
+        }
+        if (req.body.interest == "both") {
+            return req.body.interest;
+        }
+    })
     console.log(user);
     users.push(user);
 
@@ -61,11 +79,8 @@ server.get('/login', function(req, res) { //henviser brugeren til log in-siden p
 
 server.post('/login', function logIn(req, res) { //bruger POST, da data ikke sendes i URL
   for(let i = 0; i < users.length; i++) {
-  if(users[1].email == req.body.logInEmail && users[1].password == req.body.logInPassword) {
-      window.localStorage.setItem('email', req.body.logInEmail);
-      window.localStorage.setItem('password', req.body.logInPassword);
-      console.log("hej")
-      return req.redirect('/');
+  if(users[i].email == req.body.logInEmail && users[i].password == req.body.logInPassword) {
+      return res.redirect('/');
   } else {
       return res.send("E-mail or password incorret. Please try again or sign up to create a user.");
   }}

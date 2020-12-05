@@ -1,44 +1,38 @@
 [
   {
-    "fullname": "Jacob",
+    "fullname": "Emilie",
     "password": "1234",
-    "email": "jacobrindsig@hotmail.com",
-    "birthday": "1997-03-14",
-    "userID": 1606944916597
+    "email": "emilie@live.dk",
+    "birthday": "4665-03-12",
+    "userID": 1607123311550,
+    "gender": "female",
+    "interest": "male"
   },
   {
-    "fullname": "Laura",
+    "fullname": "niklas",
     "password": "1234",
-    "email": "lauraboejer@live.dk",
-    "birthday": "1999-05-23",
-    "userID": 1606945844025
+    "email": "niklas@live.dk",
+    "birthday": "1212-12-12",
+    "userID": 1607125448357,
+    "gender": "female",
+    "interest": "male"
   },
   {
-    "fullname": "test",
-    "password": "test",
-    "email": "test@test.test",
-    "birthday": "2020-12-10",
-    "userID": 1607111057018
+    "fullname": "Karl",
+    "password": "12344",
+    "email": "karl@live.dk",
+    "birthday": "0456-03-12",
+    "userID": 1607125570898,
+    "gender": "male",
+    "interest": "both"
   },
   {
-    "fullname": "Laura",
+    "fullname": "Karl",
     "password": "1234",
-    "email": "lauraboejer@live.dk",
-    "birthday": "2020-12-25",
-    "userID": 1607111142153
-  },
-  {
-    "fullname": "ee",
-    "password": "123e4",
-    "email": "1234@1234.dk",
-    "birthday": "2020-12-09",
-    "userID": 1607111780959
-  },
-  {
-    "fullname": "Laura",
-    "password": "1234",
-    "email": "lauraboejer@live.dk",
-    "birthday": "2020-12-02",
-    "userID": 1607114537993
+    "email": "karl@live.dk",
+    "birthday": "0456-03-12",
+    "userID": 1607125597843,
+    "gender": "male",
+    "interest": "both"
   }
 ]

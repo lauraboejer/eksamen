@@ -27,12 +27,21 @@
     "interest": "both"
   },
   {
-    "fullname": "Karl",
+    "fullname": "Laura",
+    "password": "12345",
+    "email": "lauraboejer@live.dk",
+    "birthday": "1999-05-23",
+    "userID": 1607185424099,
+    "gender": "female",
+    "interest": "male"
+  },
+  {
+    "fullname": "theis",
     "password": "1234",
-    "email": "karl@live.dk",
-    "birthday": "0456-03-12",
-    "userID": 1607125597843,
+    "email": "theis@live.dk",
+    "birthday": "2020-12-24",
+    "userID": 1607213892339,
     "gender": "male",
-    "interest": "both"
+    "interest": "female"
   }
 ]

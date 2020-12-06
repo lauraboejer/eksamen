@@ -4,16 +4,17 @@
         <title>Login </title>
     </head>
     <body>
-        <form action="/login" method="POST" id="loginForm"> 
+        <form action="/login" method="POST" id="logInForm" onsubmit="rememberLogIn()"> 
             <b>Login:</b>
-            <br><br>
-            <label for="loginEmail">E-mail:</label>
-            <input id="loginEmail" type="text" placeholder="Enter Email" name="logInEmail"/>
+                <br><br>
+            <label for="logInEmail">E-mail:</label>
+            <input id="logInEmail" type="text" placeholder="Enter Email" name="logInEmail"/>
                 <br></br>
-            <label for="loginPassword">Password:</label>
-            <input id="loginPassword" type="password" placeholder="Enter Password" name="logInPassword"/>
+            <label for="logInPassword">Password:</label>
+            <input id="logInPassword" type="password" placeholder="Enter Password" name="logInPassword"/>
                 <br></br>
-            <input id="loginButton" type="submit" value="Login"/> 
+            <input id="logInButton" type="submit" value="Log in"/> 
        </form>
+       <script type="text/javascript" src="/localStorage.js"></script>
     </body>
 </html>

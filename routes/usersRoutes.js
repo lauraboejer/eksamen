@@ -11,7 +11,7 @@ router.get('/', userControllers.showAllUsers);
 router.post('/', userControllers.createUser);
 
 //show specific user
-router.get('/:userId', userControllers.showSpecificUser);
+router.get('/:email', userControllers.showSpecificUser);
 
 //delete specific user
 router.delete('/:userId', userControllers.deleteSpecificUser);

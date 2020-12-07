@@ -8,5 +8,15 @@
     "gender": "female",
     "interest": "male",
     "userId": 1607294200387
+  },
+  {
+    "firstName": "Jacob",
+    "lastName": "Pedersen",
+    "password": "1234",
+    "email": "jacobrindsig@hotmail.dk",
+    "age": 23,
+    "gender": "male",
+    "interest": "female",
+    "userId": 1607294200087
   }
 ]

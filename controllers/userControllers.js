@@ -29,9 +29,10 @@ function createUser(req, res) {
 };
 
 function showSpecificUser(req, res) {
-	const userId = req.params.userId;
-	const specificUser = users.find((user) => user.userId == userId);
-	res.send(specificUser);
+	const email = req.params.email;
+	const specificUser = users.find((user) => user.email == email);
+    res.send(specificUser);
+    console.log(specificUser)
 };
 
 function deleteSpecificUser(req, res) {

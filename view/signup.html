@@ -4,24 +4,23 @@
         <title>Sign Up</title>
     </head>
     <body>
-        <form id="signUpForm"> 
             <b>Sign Up:</b>
                 <br><br>
                 <label for="fullname">Enter Fullname:</label>
-                <input id="fullname" type="text" placeholder="Fullname" name="fullname"/>
+                <input id="fullname" type="text" placeholder="Fullname" name="fullname" required/>
                     <br></br>
                 <label for="signUpPassword">Enter Password:</label>
-                <input id="signUpPassword" type="password" placeholder="Password" name="password"/>
+                <input id="signUpPassword" type="password" placeholder="Password" name="password" required/>
                     <br></br>
                 <label for="signUpEmail">Enter email:</label>
-                <input id="signUpEmail" type="email" placeholder="example@mail.com" name="email">
+                <input id="signUpEmail" type="email" placeholder="example@mail.com" name="email" required>
                     <br></br>
                 <label for="birthday">Enter Birthday: </label>
-                <input id="birthday" type="date" id="birthday" name="birthday">
+                <input id="birthday" type="date" id="birthday" name="birthday" required>
                     <br></br>
                 
             <p>Select your gender:</p>
-                <input type="radio" value="female" id="genderF" name="gender" >
+                <input type="radio" value="female" id="genderF" name="gender">
                 <label for="female">Female</label>
                 <input type="radio" value="male" id="genderM" name="gender">
                 <label for="male">Male</label>
@@ -36,7 +35,6 @@
                 <label for="both">Both</label>
                     <br></br>
             
-            <input id="signUpButton" type="submit" value="Sign Up"/> 
-        </form>
+            <button type="button" onclick="createUser ()">Sign up</button>
     </body>
 </html>

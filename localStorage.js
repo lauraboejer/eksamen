@@ -12,7 +12,7 @@ function logOut() {
 	localStorage.removeItem ('email');
 	localStorage.removeItem ('password'); //alternativt kan localStorage.clear() bruges til at fjerne alle gemte oplysninger
 };
-
+z
 //     document.getElementById('logInButton').addEventListener('click', function validateLogIn() {
 //         for(let i = 0; i < users.length; i++) {
 //             console.log("hej");

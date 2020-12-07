@@ -1,0 +1,12 @@
+[
+  {
+    "firstName": "Laura",
+    "lastName": "Bøjer",
+    "password": "1234",
+    "email": "lauraboejer@live.dk",
+    "age": 21,
+    "gender": "female",
+    "interest": "male",
+    "userId": 1607294200387
+  }
+]

@@ -1,15 +1,46 @@
-function match(female, male) {
-    if(female.interest == male.gender && male.interest == female.gender && female.hobby == male.hobby) {
-        return "It is a match"
-    } else {
-        return "It is not a match"
-    }
+const fs = require('fs');
+let userStorage = fs.readFileSync('./storage/userStorage.json', "utf8");
+let users = JSON.parse(userStorage);
+
+//inddeler først userStorage i mænd og kvinder
+let sorted1 = {};
+for(let i = 0; i < users.length; i++) {
+    if(sorted1[users[i].gender] == undefined) {
+        sorted1[users[i].gender] = [];
+    };
+    sorted1[users[i].gender].push(users[i]);
 };
-items.reduce(function(buckets, item){
-    if(!buckets[item.age]) buckets[item.age] = [];
-    buckets[item.age].push(item);
-    return buckets;
-});
+
+//inddeler derefter kvinder i interesse
+let gFemale = sorted1["female"];
+
+let sorted2 = {};
+for(let i = 0; i < gFemale.length; i++) {
+    if(sorted2[gFemale[i].interest] == undefined) {
+        sorted2[gFemale[i].interest] = [];
+    };
+    sorted2[gFemale[i].interest].push(gFemale[i]);
+};
+
+let gFemale_iMale = sorted2["male"];
+let gFemale_iFemale = sorted2["female"];
+
+
+//inddeler til sidst mænd i interesse
+let gMale = sorted1["male"];
+
+let sorted3 = {};
+for(let i = 0; i < gMale.length; i++) {
+    if(sorted3[gMale[i].interest] == undefined) {
+        sorted3[gMale[i].interest] = [];
+    };
+    sorted3[gMale[i].interest].push(gMale[i]);
+};
+
+let gMale_iFemale = sorted3["female"];
+let gMale_iMale = sorted3["male"];
+
+
 
 
 // sample usage

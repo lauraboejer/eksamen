@@ -12,9 +12,9 @@ function createUser(req, res) {
     let user = new User(
         req.body.firstName,
         req.body.lastName,
-        req.body.password,
         req.body.email,
-        req.body.age,
+        req.body.password,
+        req.body.birthday,
         req.body.gender,
         req.body.interest,
         Date.now()
@@ -36,10 +36,10 @@ function showSpecificUser(req, res) {
 };
 
 function deleteSpecificUser(req, res) {
-    const userId = req.params.userId;
+    const email = req.params.email;
     for(let i = 0; i < users.length; i++) {
-        if(users[i].userId == userId) {
-            console.log(users[i].userId);
+        if(users[i].email == email) {
+            console.log(users[i].email);
             users.splice(i, 1);
 
             let usersStorage = JSON.stringify(users, null, 2);
@@ -48,16 +48,16 @@ function deleteSpecificUser(req, res) {
             res.send("Goodbye, my lover! We hope you are leaving because you found someone else.")
         };
     };
-    res.send("It's not you, it's us. There's just no chemistry between the written user-id and the database.")
+    res.send("It's not you, it's us. There's just no chemistry between the written e-mail and the database.")
 };
 
 function editSpecificUser(req, res) { //kan både slette og opdatere, dvs. sende og modtage data. Her bruges ikke put, da jeg blot ønsker at ændre specifikke attributter i mine objekter.
-    const userId = req.params.userId;
+    const email = req.params.email;
     const firstName = req.body.firstName;
     const lastName = req.body.lastName;
-    const age = req.body.age;
+    const birthday = req.body.birthday;
 
-    const specificUser = users.find((user) => user.userId == userId);
+    const specificUser = users.find((user) => user.email == email);
 
     if(firstName) {
         specificUser.firstName = firstName;
@@ -65,8 +65,8 @@ function editSpecificUser(req, res) { //kan både slette og opdatere, dvs. sende
     if(lastName) {
         specificUser.lastName = lastName;
     };
-    if(age) {
-        specificUser.age = age;
+    if(birthday) {
+        specificUser.birthday = birthday;
     };
     let usersStorage = JSON.stringify(users, null, 2);
     fs.writeFileSync('./storage/usersStorage.json', usersStorage, 'utf8')

@@ -4,15 +4,15 @@
         <title>Login </title>
     </head>
     <body>
-        <b>Login:</b>
-        <br><br>
-        <label for="logInEmail">E-mail:</label>
-        <input id="logInEmail" type="text" placeholder="Enter Email" name="logInEmail"/>
-            <br></br>
-        <label for="logInPassword">Password:</label>            <input id="logInPassword" type="password" placeholder="Enter Password" name="logInPassword"/>
-            <br></br>
-        <button id="logInButton" onclick="logIn()">Log in</button> 
-       </form>
-       <script src="/staticFiles/login.js"></script>
+        <h2>Login:</h2>
+            <label for="email">E-mail:</label>
+            <input id="email" type="text" placeholder="Enter Email" name="email"/>
+                <br></br>
+            <label for="password">Password:</label>            
+            <input id="password" type="password" placeholder="Enter Password" name="password"/>
+                <br></br>
+            <button id="logInButton" onclick="logIn()">Log in</button> 
+            <button id="homepageButton" onclick="location.href='/'">Back to homepage</button> 
+        <script src="/view/login.js"></script>
     </body>
 </html>

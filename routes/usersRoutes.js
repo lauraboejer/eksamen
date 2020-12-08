@@ -14,8 +14,8 @@ router.post('/', userControllers.createUser);
 router.get('/:email', userControllers.showSpecificUser);
 
 //delete specific user
-router.delete('/:userId', userControllers.deleteSpecificUser);
+router.delete('/:email', userControllers.deleteSpecificUser);
 
-router.patch('/:userId', userControllers.editSpecificUser);
+router.patch('/:email', userControllers.editSpecificUser);
 
 module.exports = router;

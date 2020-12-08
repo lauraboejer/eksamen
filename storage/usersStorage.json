@@ -2,21 +2,11 @@
   {
     "firstName": "Laura",
     "lastName": "Bøjer",
-    "password": "1234",
     "email": "lauraboejer@live.dk",
-    "age": 21,
-    "gender": "female",
-    "interest": "male",
-    "userId": 1607294200387
-  },
-  {
-    "firstName": "Jacob",
-    "lastName": "Pedersen",
-    "password": "1234",
-    "email": "jacobrindsig@hotmail.dk",
-    "age": 23,
-    "gender": "male",
-    "interest": "female",
-    "userId": 1607294200087
+    "password": "12345678910",
+    "birthday": "1999-05-23",
+    "gender": "Female",
+    "interest": "Male",
+    "userId": 1607390168382
   }
 ]

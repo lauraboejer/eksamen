@@ -6,13 +6,12 @@ const server = express();
 const PORT = 8000;
 
 const userRoutes = require('./routes/usersRoutes.js');
-const { Server } = require('net');
 
 server.use(bodyParser.json()); 
 
 server.use('/users', userRoutes);
 
-server.use("/staticFiles", express.static('./staticFiles/'));
+server.use("/view", express.static('./view/'));
 
 server.get('/', (req, res) => {
     res.sendFile('./view/homepage.html', {root: __dirname});
@@ -23,7 +22,19 @@ server.get('/signup', (req, res) => {
 });
 
 server.get('/login', (req, res) => {
-    res.sendFile('./view/login.html', {root: __dirname});
+     res.sendFile('./view/login.html', {root: __dirname});
+});
+
+server.get('/profile', (req, res) => {
+    res.sendFile('./view/profile.html', {root: __dirname});
+});
+
+server.get('/editProfile', (req, res) => {
+    res.sendFile('./view/editProfile.html', {root: __dirname});
+});
+
+server.get('/deleteProfile', (req, res) => {
+    res.sendFile('./view/deleteProfile.html', {root: __dirname});
 });
 
 

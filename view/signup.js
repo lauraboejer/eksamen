@@ -10,7 +10,6 @@ function signUp(){
 
     var interestF = document.getElementById("interestF");
     var interestM = document.getElementById("interestM");
-    var interestB = document.getElementById("interestB");
 
     var userId = Date.now();
 
@@ -30,10 +29,6 @@ function signUp(){
         } 
         if (interestM.checked) {
             interest = interestM.value;
-            interest;
-        }
-        if (interestB.checked) {
-            interest = interestB.value;
             interest;
         }
 
@@ -56,7 +51,7 @@ function signUp(){
         body: JSON.stringify(user)
     };
 
-    fetch('http://localhost:8000/users', options);
+    fetch('http://localhost:8000/user', options);
     window.location.href="/login";
     alert("You have now created an account. Log in to get started!")
 };

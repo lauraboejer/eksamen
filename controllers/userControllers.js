@@ -1,6 +1,6 @@
 const fs = require('fs');
-let usersStorage = fs.readFileSync('./storage/usersStorage.json', "utf8");
-let users = JSON.parse(usersStorage);
+let userStorage = fs.readFileSync('./storage/userStorage.json', "utf8");
+let users = JSON.parse(userStorage);
 
 let User = require('../model/userModel.js');
 
@@ -22,8 +22,8 @@ function createUser(req, res) {
 
     users.push(user);
 
-    let usersStorage = JSON.stringify(users, null, 2);
-    fs.writeFileSync('./storage/usersStorage.json', usersStorage, 'utf8')
+    let userStorage = JSON.stringify(users, null, 2);
+    fs.writeFileSync('./storage/userStorage.json', userStorage, 'utf8')
 
     res.send("Hello " + user.firstName + "! Welcome to Tinder 2.0. You have succesfully created an acount.")
 };
@@ -43,7 +43,7 @@ function deleteSpecificUser(req, res) {
             users.splice(i, 1);
 
             let usersStorage = JSON.stringify(users, null, 2);
-            fs.writeFileSync('./storage/usersStorage.json', usersStorage, 'utf8')
+            fs.writeFileSync('./storage/userStorage.json', userStorage, 'utf8')
 
             res.send("Goodbye, my lover! We hope you are leaving because you found someone else.")
         };
@@ -68,8 +68,8 @@ function editSpecificUser(req, res) { //kan både slette og opdatere, dvs. sende
     if(birthday) {
         specificUser.birthday = birthday;
     };
-    let usersStorage = JSON.stringify(users, null, 2);
-    fs.writeFileSync('./storage/usersStorage.json', usersStorage, 'utf8')
+    let userStorage = JSON.stringify(users, null, 2);
+    fs.writeFileSync('./storage/userStorage.json', userStorage, 'utf8')
 
     res.send("Good news! Your profile has successfully been updated.")
 };

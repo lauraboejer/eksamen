@@ -5,11 +5,11 @@ const cors = require('cors');
 const server = express();
 const PORT = 8000;
 
-const userRoutes = require('./routes/usersRoutes.js');
+const userRoutes = require('./routes/userRoutes.js');
 
 server.use(bodyParser.json()); 
 
-server.use('/users', userRoutes);
+server.use('/user', userRoutes);
 
 server.use("/view", express.static('./view/'));
 

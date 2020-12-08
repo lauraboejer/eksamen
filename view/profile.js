@@ -1,6 +1,6 @@
 const email = localStorage.getItem('email');
 
-fetch(`http://localhost:8000/users/${email}`)
+fetch(`http://localhost:8000/user/${email}`)
 .then((response) => response.json())
 .then((data) => {
     document.getElementById("fullName").innerHTML = data.firstName + " " + data.lastName;

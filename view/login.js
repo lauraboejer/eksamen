@@ -2,7 +2,7 @@ function logIn() {
     var email = document.getElementById("email").value;
     var password = document.getElementById("password").value;
 
-    fetch(`http://localhost:8000/users/${email}`)
+    fetch(`http://localhost:8000/user/${email}`)
     .then((response) => response.json())
     .then((data) => {
         if (data.email == email && data.password == password){

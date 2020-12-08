@@ -1,6 +1,6 @@
 function editProfile() {
     let email = localStorage.getItem('email');
-    
+
     let firstName = document.getElementById("firstName").value;
     let lastName = document.getElementById("lastName").value;
     let password = document.getElementById("password").value;
@@ -11,7 +11,6 @@ function editProfile() {
 
     let interestF = document.getElementById("interestF");
     let interestM = document.getElementById("interestM");
-    let interestB = document.getElementById("interestB");
 
     user = {};
 
@@ -39,9 +38,6 @@ function editProfile() {
     if(interestM.checked) {
         user.interest = interestM.value;
     };
-    if (interestB.checked) {
-        user.interest = interestB.value;
-    };
 
     const options = {
         method: 'PATCH',
@@ -51,7 +47,7 @@ function editProfile() {
         body: JSON.stringify(user)
     };
 
-    fetch(`http://localhost:8000/users/${email}`, options)
+    fetch(`http://localhost:8000/user/${email}`, options)
         window.location.href = "/profile";
         alert("Your changes has been saved!")
 };

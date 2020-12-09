@@ -21,7 +21,7 @@ function signUp(){
         interest = null;
         if (interestF.checked) {
             interest = interestF.value;
-            interest;
+            interest; 
         };
         if (interestM.checked) {
             interest = interestM.value;

@@ -27,4 +27,4 @@ function editProfile() {
     fetch(`http://localhost:8000/user/${email}`, options)
         window.location.href = "/profile";
         alert("Your changes has been saved!")
-};
+}; 

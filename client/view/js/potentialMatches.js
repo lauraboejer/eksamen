@@ -21,7 +21,7 @@ function likeUser() {
     const options = {
         method: 'PATCH',
         headers: {
-            'Content-Type': 'application/json'
+            'Content-Type': 'application/json' 
         },
         body: JSON.stringify(user)
     };

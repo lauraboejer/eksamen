@@ -15,4 +15,4 @@ function logOut() {
     localStorage.removeItem('password');
     window.location.href = '/';
     alert("Leaving already? Okay then. You are now logged for out - see you soon!")
-};
+}; 

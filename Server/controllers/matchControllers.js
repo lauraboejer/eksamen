@@ -1,5 +1,5 @@
 const fs = require('fs');
-let userStorage = fs.readFileSync('./storage/userStorage.json', "utf8");
+let userStorage = fs.readFileSync('../storage/userStorage.json', "utf8");
 let users = JSON.parse(userStorage);
 
 function potentialMatches(req, res) {
@@ -21,7 +21,7 @@ function likeUser(req, res) { //kan både slette og opdatere, dvs. sende og modt
     specificUser.liked.push(likedEmail);
 
     let userStorage = JSON.stringify(users, null, 2);
-    fs.writeFileSync('./storage/userStorage.json', userStorage, 'utf8')
+    fs.writeFileSync('../storage/userStorage.json', userStorage, 'utf8')
 
     res.send("User like registered");
     console.log("User like registered");

@@ -1,5 +1,5 @@
 const fs = require('fs');
-let userStorage = fs.readFileSync('./storage/userStorage.json', "utf8");
+let userStorage = fs.readFileSync('../storage/userStorage.json', "utf8");
 let users = JSON.parse(userStorage);
 
 let User = require('../model/userModel.js');
@@ -23,7 +23,7 @@ function createUser(req, res) {
     users.push(user);
 
     let userStorage = JSON.stringify(users, null, 2);
-    fs.writeFileSync('./storage/userStorage.json', userStorage, 'utf8')
+    fs.writeFileSync('../storage/userStorage.json', userStorage, 'utf8')
 
     res.send(`Hello ${user.firstName} "! Welcome to Tinder 2.0. You have succesfully created an acount.`)
 };
@@ -43,7 +43,7 @@ function deleteSpecificUser(req, res) {
             users.splice(i, 1);
 
             let userStorage = JSON.stringify(users, null, 2);
-            fs.writeFileSync('./storage/userStorage.json', userStorage, 'utf8')
+            fs.writeFileSync('../storage/userStorage.json', userStorage, 'utf8')
 
             res.send("Goodbye, my lover! We hope you are leaving because you found someone else.")
         };

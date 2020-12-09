@@ -12,17 +12,12 @@ fetch(`http://localhost:8000/match/${email}`)
     };
 });
 
-class User {
-    constructor(liked) {
-    this.liked = [];
-    }
-};
 
 function likeUser() {
-    let user = new User;
+    let user = {};
     let likedEmail = document.getElementById('email').value;
-    console.log(likedEmail)
     user.liked.push(likedEmail);
+    
     const options = {
         method: 'PATCH',
         headers: {

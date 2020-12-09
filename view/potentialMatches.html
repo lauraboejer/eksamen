@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>   
+    <head>
+        <title>Match page</title>
+    </head>
+    <body>
+        <h1>Match page</h1>
+            <button id="profileButton" onclick="location.href='/profile'">Back to profile</button>
+            <br><br><br>
+        <b>Name: </b>
+            <p id="fullName"></p>
+                <br><br>
+        <b>E-mail:</b>
+            <p id="email" name="email"></p>
+                <br><br>
+        <b>Birthday:</b>
+            <p id="birthday"></p>
+                <br><br>
+        <b>Gender:</b>
+            <p id="gender"></p>
+                <br><br>
+        <b>Interested in:</b>
+            <p id="interest"></p>
+                <br><br>
+            <button id="profileButton" onclick="likeUser()">Like</button> 
+            <button id="profileButton" onclick="location.reload()">Dislike</button> 
+        <script src="/view/potentialMatches.js"></script>
+    </body>
+</html>

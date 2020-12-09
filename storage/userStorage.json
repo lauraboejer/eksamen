@@ -2,81 +2,88 @@
   {
     "firstName": "Lærke",
     "lastName": "Stald",
-    "email": "laerke@hej.dk",
-    "password": "1234",
-    "birthday": "1111-11-11",
+    "email": "laerke@eksempel.dk",
+    "password": "123fvd4",
+    "birthday": "1998-28-11",
     "gender": "Female",
     "interest": "Male",
-    "userId": 1607396927768
+    "userId": 1607396927768,
+    "liked": [
+      "martin@eksempel.dk",
+      "jens@eksempel.dk"
+    ],
+    "matches": []
   },
   {
-    "firstName": "Alex",
-    "lastName": "Gonzalez",
-    "email": "alex@hej.dk",
-    "password": "1234",
-    "birthday": "1111-11-11",
-    "gender": "Female",
-    "interest": "Male",
-    "userId": 1607396948466
-  },
-  {
-    "firstName": "Jacob",
-    "lastName": "Pedersen",
-    "email": "jacob@hej.dk",
-    "password": "1234",
-    "birthday": "0111-11-11",
+    "firstName": "Martin",
+    "lastName": "Jensen",
+    "email": "martin@eksempel.dk",
+    "password": "4edrgg321",
+    "birthday": "1996-12-01",
     "gender": "Male",
     "interest": "Female",
-    "userId": 1607396993444
-  },
-  {
-    "firstName": "Paul",
-    "lastName": "Bak",
-    "email": "paul@hej.dk",
-    "password": "1234",
-    "birthday": "1111-11-11",
-    "gender": "Male",
-    "interest": "Female",
-    "userId": 1607397013087
-  },
-  {
-    "firstName": "Buller",
-    "lastName": "Mand",
-    "email": "buller@hej.dk",
-    "password": "1234",
-    "birthday": "1111-11-11",
-    "gender": "Male",
-    "interest": "Male",
-    "userId": 1607397072364
+    "userId": 1607397072364,
+    "liked": [],
+    "matches": []
   },
   {
     "firstName": "Jens",
-    "lastName": "Jensen",
-    "email": "jens@hej.dk",
-    "password": "1234",
-    "birthday": "1111-11-11",
+    "lastName": "Hansen",
+    "email": "jens@eksempel.dk",
+    "password": "8746ryhu4",
+    "birthday": "1995-11-07",
+    "gender": "Male",
+    "interest": "Female",
+    "userId": 1607397105423,
+    "liked": [],
+    "matches": []
+  },
+  {
+    "firstName": "Ninna",
+    "lastName": "Olesen",
+    "email": "ninna@eksempel.dk",
+    "password": "3edwf",
+    "birthday": "1993-12-12",
+    "gender": "Female",
+    "interest": "Female",
+    "userId": 1607464332375,
+    "liked": [],
+    "matches": []
+  },
+  {
+    "firstName": "Ole",
+    "lastName": "Sørensen",
+    "email": "ole@eksempel.dk",
+    "password": "wef3rgw",
+    "birthday": "1987-17-06",
+    "gender": "Male",
+    "interest": "Female",
+    "userId": 1607464526317,
+    "liked": [],
+    "matches": []
+  },
+  {
+    "firstName": "Line",
+    "lastName": "Mikkelsen",
+    "email": "line@eksempel.dk",
+    "password": "12983r7gehi",
+    "birthday": "1996-21-10",
+    "gender": "Female",
+    "interest": "Male",
+    "userId": 1607470729574,
+    "liked": [],
+    "matches": []
+  },
+  {
+    "firstName": "Henrik",
+    "lastName": "Lassen",
+    "email": "henrik@eksempel.dk",
+    "password": "29uehoklwjn",
+    "birthday": "1992-02-03",
     "gender": "Male",
     "interest": "Male",
-    "userId": 1607397105423
-  },
-  {
-    "firstName": "Mette",
-    "lastName": "Frederiksen",
-    "email": "mette@hej.dk",
-    "password": "1234",
-    "birthday": "1111-11-11",
-    "gender": "Female",
-    "interest": "Female",
-    "userId": 1607397136066
-  },
-  {
-    "firstName": "Bente",
-    "lastName": "Bent",
-    "email": "bente@hej.dk",
-    "password": "1234",
-    "birthday": "1111-11-11",
-    "gender": "Female",
-    "interest": "Female",
-    "userId": 1607397170484
+    "userId": 1607470729574,
+    "liked": [],
+    "matches": []
   }
 ]

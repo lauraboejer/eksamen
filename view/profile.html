@@ -5,8 +5,8 @@
     </head>
     <body>
         <h1>Profile</h1>
-        <button id="matchPageButton" onclick="location.href='/matchPage'">Start matching!</button> 
-        <button id="showMatches" onclick="location.href='/showMatches'">Current matches</button> 
+        <button id="matchPageButton" onclick="location.href='/potentialMatches'">Start matching!</button> 
+        <button id="showMatches" onclick="location.href='/currentMatches'">Current matches</button> 
             <br><br><br>
         <b>Name: </b>
             <p id="fullName"></p>
@@ -24,8 +24,8 @@
             <p id="interest"></p>
                 <br><br>
             <button id="editButton" onclick="location.href='/editProfile'">Edit profile</button> 
-            <button id="logOutButton" onclick="logOut()">Log out</button>
             <button id="deleteButton" onclick="location.href='/deleteProfile'">Delete profile</button> 
+            <button id="logOutButton" onclick="logOut()">Log out</button>
         <script src="/view/profile.js"></script>
     </body>
 </html>

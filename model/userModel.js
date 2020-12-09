@@ -8,6 +8,8 @@ class User {
     this.gender = gender;
     this.interest = interest;
     this.userId = userId;
+    this.liked = [];
+    this.matches = [];
     }
 };
 

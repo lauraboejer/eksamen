@@ -25,14 +25,14 @@ function createUser(req, res) {
     let userStorage = JSON.stringify(users, null, 2);
     fs.writeFileSync('./storage/userStorage.json', userStorage, 'utf8')
 
-    res.send("Hello " + user.firstName + "! Welcome to Tinder 2.0. You have succesfully created an acount.")
+    res.send(`Hello ${user.firstName} "! Welcome to Tinder 2.0. You have succesfully created an acount.`)
 };
 
 function showSpecificUser(req, res) {
 	const email = req.params.email;
 	const specificUser = users.find((user) => user.email == email);
     res.send(specificUser);
-    console.log(specificUser)
+    console.log(specificUser);
 };
 
 function deleteSpecificUser(req, res) {
@@ -42,7 +42,7 @@ function deleteSpecificUser(req, res) {
             console.log(users[i].email);
             users.splice(i, 1);
 
-            let usersStorage = JSON.stringify(users, null, 2);
+            let userStorage = JSON.stringify(users, null, 2);
             fs.writeFileSync('./storage/userStorage.json', userStorage, 'utf8')
 
             res.send("Goodbye, my lover! We hope you are leaving because you found someone else.")
@@ -55,6 +55,7 @@ function editSpecificUser(req, res) { //kan både slette og opdatere, dvs. sende
     const email = req.params.email;
     const firstName = req.body.firstName;
     const lastName = req.body.lastName;
+    const password = req.body.password;
     const birthday = req.body.birthday;
 
     const specificUser = users.find((user) => user.email == email);
@@ -64,6 +65,9 @@ function editSpecificUser(req, res) { //kan både slette og opdatere, dvs. sende
     };
     if(lastName) {
         specificUser.lastName = lastName;
+    };
+    if(password) {
+        specificUser.password = password;
     };
     if(birthday) {
         specificUser.birthday = birthday;
@@ -79,5 +83,5 @@ module.exports = {
     createUser,
     showSpecificUser,
     deleteSpecificUser,
-    editSpecificUser,
+    editSpecificUser
 };

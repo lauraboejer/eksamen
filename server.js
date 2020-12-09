@@ -1,18 +1,20 @@
 const express = require('express');
 const bodyParser = require('body-parser');
-const cors = require('cors');
-
 const server = express();
 const PORT = 8000;
 
 const userRoutes = require('./routes/userRoutes.js');
+const matchRoutes = require('./routes/matchRoutes.js');
 
 server.use(bodyParser.json()); 
 
 server.use('/user', userRoutes);
 
+server.use('/match', matchRoutes);
+
 server.use("/view", express.static('./view/'));
 
+//renderer html
 server.get('/', (req, res) => {
     res.sendFile('./view/homepage.html', {root: __dirname});
 });
@@ -37,6 +39,9 @@ server.get('/deleteProfile', (req, res) => {
     res.sendFile('./view/deleteProfile.html', {root: __dirname});
 });
 
+server.get('/potentialMatches', (req, res) => {
+    res.sendFile('./view/potentialMatches.html', {root: __dirname});
+});
 
 server.listen(PORT, (req, res) => {
     console.log('Server application is running on http://localhost:' + PORT);

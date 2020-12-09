@@ -14,7 +14,7 @@ server.use('/match', matchRoutes);
 
 server.use("/view", express.static('./view/'));
 
-//renderer html
+//connecter endpoints og html
 server.get('/', (req, res) => {
     res.sendFile('./view/homepage.html', {root: __dirname});
 });
@@ -43,6 +43,7 @@ server.get('/potentialMatches', (req, res) => {
     res.sendFile('./view/potentialMatches.html', {root: __dirname});
 });
 
+//tester serveren
 server.listen(PORT, (req, res) => {
     console.log('Server application is running on http://localhost:' + PORT);
 });

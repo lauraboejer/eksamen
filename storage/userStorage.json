@@ -85,5 +85,17 @@
     "userId": 1607470729574,
     "liked": [],
     "matches": []
+  },
+  {
+    "firstName": "Mikkel",
+    "lastName": "Hansen",
+    "email": "mikkel@eksempel.dk",
+    "password": "1234",
+    "birthday": "1999-12-17",
+    "gender": "Male",
+    "interest": "Female",
+    "userId": 1607483062760,
+    "liked": [],
+    "matches": []
   }
 ]

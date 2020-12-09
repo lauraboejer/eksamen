@@ -10,7 +10,7 @@ fetch(`http://localhost:8000/user/${email}`)
     document.getElementById("interest").innerHTML = data.interest;
 });
 
-function logOut(){
+function logOut() {
     localStorage.removeItem('email');
     localStorage.removeItem('password');
     window.location.href = '/';

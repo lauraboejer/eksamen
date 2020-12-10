@@ -31,6 +31,23 @@ function likeUser() {
         window.location.reload();
 };
 
+function dislikeUser() {
+    let user = {};
+    let dislikedEmail = document.getElementById('email').value;
+    user.liked.push(dislikedEmail);
+    
+    const options = {
+        method: 'PATCH',
+        headers: {
+            'Content-Type': 'application/json' 
+        },
+        body: JSON.stringify(user)
+    };
+    fetch(`http://localhost:8000/match/${email}`, options)
+        alert("Dislike has been registered");
+        window.location.reload();
+};
+
 //--------------------Forsøg på at udarbejde matchfunktion----------------------
 //
 // function findMatch() {

@@ -9,7 +9,8 @@ const matchRoutes = require('./routes/matchRoutes.js');
 
 server.use(bodyParser.json()); 
 
-server.use("/public", express.static(path.resolve('/Eksamen/Client/view/')));
+server.use(express.static(path.join(__dirname, '../Client/view/')));
+server.use(express.static(path.join(__dirname, '../Client/view/js/')));
 
 server.use('/user', userRoutes);
 

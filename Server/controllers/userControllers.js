@@ -2,7 +2,7 @@ const fs = require('fs');
 let userStorage = fs.readFileSync('../storage/userStorage.json', "utf8");
 let users = JSON.parse(userStorage);
 
-let User = require('../model/userModel.js');
+let User = require('../classes/userClass.js');
 
 function showAllUsers(req, res) { //refererer i dette tilfælde til hhtp://localhost:5000/users/
     res.send(users)

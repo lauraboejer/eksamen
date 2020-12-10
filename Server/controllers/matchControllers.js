@@ -27,8 +27,24 @@ function likeUser(req, res) { //kan både slette og opdatere, dvs. sende og modt
     console.log("User like registered");
 };
 
+function dislikeUser(req, res) { //kan både slette og opdatere, dvs. sende og modtage data. Her bruges ikke put, da jeg blot ønsker at ændre specifikke attributter i mine objekter.
+    const email = req.params.email;
+    const dislikedEmail = req.body.disliked;
+
+    let specificUser = users.find((user) => user.email == email);
+
+    specificUser.disliked.push(dislikedEmail);
+
+    let userStorage = JSON.stringify(users, null, 2);
+    fs.writeFileSync('../storage/userStorage.json', userStorage, 'utf8')
+
+    res.send("User dislike registered");
+    console.log("User dislike registered");
+};
+
 module.exports = {
     potentialMatches,
-    likeUser
+    likeUser,
+    dislikeUser
 };
 

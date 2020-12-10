@@ -9,6 +9,7 @@ class User {
     this.interest = interest;
     this.userId = userId;
     this.liked = [];
+    this.disliked = [];
     this.matches = [];
     }
 };
